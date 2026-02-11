@@ -6,76 +6,92 @@
 
 /* ================= BODY ================= */
 body {
-    background-color: #000;
-    font-family: Arial, sans-serif;
-    color: #000;
+    background-color: gray;
+    color: #fff;
 }
 
-/* ================= HEADER ================= */
 .header {
-    background-color: #000;
-    border-bottom: 1px solid #333;
-    padding: 15px 20px;
+    background-color: #ffe600;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ================= PARTE SUPERIOR ================= */
+
+.top-header {
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 15px;
+    padding: 10px 40px;
 }
 
 .logo img {
-    width: 260px;
-    height: auto;
+    height: 65px;
+    margin-left: 180px;
+}
+/* ================= BUSCADOR ================= */
+
+.search-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 50%;
+    max-width: 600px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.search-container input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
 }
 
-/* ================= MENU ================= */
+.search-container button {
+    width: 50px;
+    border: none;
+    background: #eeeeee;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-container button:hover {
+    background: #ddd;
+}
+
+/* ================= MENÚ INFERIOR ================= */
+
 .menu {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 40px;
+    padding: 10px 0;
+    background-color: #ffe600; /* Amarillo más claro */
 }
 
 .menu a {
-    color: #ccc;
     text-decoration: none;
+    color: black;
+    font-family: Georgia;
     font-size: 14px;
-    padding: 8px 14px;
-    border-radius: 6px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: 0.3s ease;
 }
 
 .menu a:hover,
 .menu a.active {
     background-color: #333;
-    color: #fff;
+    color: white;
 }
-
-/* ================= BUSCADOR ================= */
-.search-container {
-    display: flex;
-    align-items: center;
-    max-width: 900px;
-    margin: 30px auto;
-    background-color: #555;
-    border-radius: 25px;
-    overflow: hidden;
-}
-
-.search-container select {
-    background-color: #444;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    outline: none;
-}
-
-.search-container input {
-    flex: 1;
-    background-color: #555;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    outline: none;
+/* =================================================== MAIN =================================================== */
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
 }
 
 /* ================= CATEGORÍAS ================= */
@@ -113,16 +129,21 @@ body {
     color: #000;
 }
 
+.categoria img:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px black;
+}
+
 /* ================= BANNER XIAOMI ================= */
 .banner_xiaomi img {
     width: 100%;
-    max-height: 420px;
     object-fit: cover;
     display: block;
 }
 /* ================= DESTACADOS ================= */
 .destacados {
     padding: 60px 40px;
+    color: black;
     background-color: #fff;
 }
 
@@ -182,13 +203,13 @@ body {
     color: #fff;
 }
 
-/* ================= FOOTER ================= */
+/* =================================================== FOOTER =================================================== */
 .footer-links {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     padding: 40px 20px;
-    background-color: black;
+    background-color: gray;
     max-width: 1200px;
     margin: auto;
     flex-wrap: wrap;
@@ -200,7 +221,7 @@ body {
 }
 
 .footer-col h4 {
-    color: white;
+    color: black;
     font-size: 16px;
     margin-bottom: 15px;
 }
@@ -240,23 +261,26 @@ body {
     opacity: 0.7;
 }
 
-/* ===== SERVICIOS ===== */
+/* =================================================== SERVICIOS =================================================== */
 
 .servicios {
-    padding: 60px 20px;
     background-color: #fff;
+    color: #000;
+    margin-top: 50px; 
+    margin-bottom: 100px;
+    padding: 40px 20px;
 }
 
-.servicios h1 {
+.servicios h2 {
+    margin-top: 40px;
+    margin-bottom: 60px;
     text-align: center;
-    margin-bottom: 50px;
-    font-size: 28px;
 }
 
 .servicios-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+    gap: 50px;
     max-width: 1100px;
     margin: auto;
 }
@@ -286,20 +310,21 @@ body {
     font-weight: bold;
 }
 
-/* ========== CONTACTO ========== */
+/* =================================================== CONTACTO =================================================== */
 
 .contacto-form {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 50px auto;
     padding: 30px;
     background-color: #fff;
+    color: black;
     border-radius: 6px;
 }
 
 .contacto-titulo {
     text-align: center;
     margin-bottom: 50px;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .contacto-grid {
@@ -384,22 +409,23 @@ body {
         flex-direction: column;
         gap: 30px;
     }
+
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 500px) {
     .search-container {
         flex-direction: column;
         border-radius: 15px;
+        gap: 8px;
+        padding: 10px;
     }
 
     .search-container select,
     .search-container input {
         width: 100%;
     }
-}
-
-@media (max-width: 768px) {
-    .contacto-grid {
-        grid-template-columns: 1fr;
-    }
+    
 }
