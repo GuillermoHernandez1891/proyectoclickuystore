@@ -1,0 +1,33 @@
+/* ========================== RESPONSIVE ========================== */
+
+@media (max-width: 768px) {
+
+ .productos_destacados_de_la_semana {
+  gap: 40px;
+}
+
+  .product-card {
+  width: 100%;
+  max-width: 320px;
+}
+
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contacto-form .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    .search-container {
+      flex-direction: column;
+      border-radius: 15px;
+      gap: 8px;
+      padding: 10px;
+    }
+  }
+}

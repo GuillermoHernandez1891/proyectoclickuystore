@@ -1,0 +1,86 @@
+.contacto-form {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: $color-blanco;
+  color: black;
+  border-radius: 6px;
+
+  .contacto-titulo {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+
+  .contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .campo {
+
+  label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s ease;
+    appearance: none;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #999;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+}
+
+  .campo-full {
+    grid-column: 1 / -1;
+  }
+
+  .boletin {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .btn-enviar {
+    width: 100%;
+    background-color: black;
+    color: $color-blanco;
+    border: none;
+    padding: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background-color: gray;
+    }
+  }
+
+  .nota {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+  }
+}
