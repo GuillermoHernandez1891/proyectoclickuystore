@@ -6,33 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Store</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header class="header">
 
-    <!-- Parte superior -->
     <div class="top-header">
+        <div class="logo">Click <span>Store</span>
+        </div>
 
-    <div class="logo">
-        <img src="./img/logo_proyecto/89105976 (1).svg" alt="Logo de Click Store">
+        <form class="search-container">
+            <input type="text" placeholder="Buscar productos..." />
+
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    width="18" height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </form>
+
+        <div class="header-right"></div>
+
     </div>
 
-    <form class="search-container">
-        <input type="text" name="buscar" placeholder="Buscar productos, marcas y más...">
-        <button type="submit">🔍</button>
-    </form>
-
-    </div>
-
-    <!-- Menú inferior -->
     <nav class="menu">
-        <a href="index.html" class="active">Inicio</a>
-        <a href="./pages/productos.html">Productos</a>
-        <a href="./pages/servicios.html">Servicios</a>
-        <a href="./pages/usuario.html">Usuario</a>
-        <a href="./pages/contacto.html">Contacto</a>
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="./pages/productos.html">Productos</a></li>
+            <li><a href="./pages/servicios.html">Servicios</a></li>
+            <li><a href="./pages/usuario.html">Usuario</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+            
+        </ul>
     </nav>
 
     </header>
@@ -40,8 +55,7 @@
 
 
     <main>
-
-        <h1 class="visually-hidden">ClickUy Store - Tecnología y electrodomésticos</h1>
+        <h1 class="visually-hidden">Tienda online de tecnología Click Store</h1>
 
         <section class="categorias">
 
@@ -88,57 +102,57 @@
         </section>
 
         <section class="banner_xiaomi">
-            <img src="./img/index_imagenes/banner_xiaomi.png" alt="banner_promocianal_xiaomi">
+            <img src="./img/index_imagenes/banner_xiaomi.png" alt="Banner promocional Xiaomi">
         </section>
 
         <section class="destacados">
         <h2>DESTACADOS DE LA SEMANA</h2>
 
-        <div class="productos">
+        <div class="productos_destacados_de_la_semana">
 
-        <article class="card">
+        <article class="product-card">
             <img src="./img/destacados_de_la_semana/notebook-lenovo-7320u-256gb-8gb.webp" alt="Notebook-Lenovo">
-            <h3 class="titulo">
+            <h3 class="product-card__title">
             NOTEBOOK LENOVO <br>
             500GB 8GB
             </h3>
 
-            <p class="precio">USD 859,00</p>
+            <p class="product-card__price">USD 859,00</p>
 
             <div class="acciones">
                 <button type="button">AGREGAR AL CARRITO</button>
             </div>
         </article>
 
-        <article class="card">
+        <article class="product-card">
             <img src="./img/destacados_de_la_semana/iphone-17-pro-max-512gb-12gb-orange.webp" alt="Iphone-17-promax">
-            <h3 class="titulo">
+            <h3 class="product-card__title">
             IPHONE 17 PRO MAX<br>
             512GB 12GB Orange
             </h3>
 
-            <p class="precio">USD 1590,00</p>
+            <p class="product-card__price">USD 1590,00</p>
 
             <div class="acciones">
                 <button type="button">AGREGAR AL CARRITO</button>
             </div>
         </article>
 
-        <article class="card">
+        <article class="product-card">
             <img src="./img/destacados_de_la_semana/joystick_play_5.webp" alt="Joystick PS5">
-            <h3 class="titulo">
+            <h3 class="product-card__title">
             JOYSTICK SONY PLAYSTATION 5<br>
             DualSense PS5 Blanco
             </h3>
 
-            <p class="precio">USD 99,00</p>
+            <p class="product-card__price">USD 99,00</p>
 
             <div class="acciones">
                 <button type="button">AGREGAR AL CARRITO</button>
             </div>
         </article>
 
-    </div>
+        </div>
 </section>
 
 
