@@ -1,5 +1,5 @@
-@use '../utilities/variables' as *;
-@include mixins.flex-center;
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .header {
   background-color: $color-principal;
@@ -31,24 +31,49 @@
   }
 
     .top-header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: 10px 60px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  padding: 10px 60px;
 }
 
     .search-container {
-    width: 600px;
-    max-width: 100%;
-    display: flex;
-    justify-self: center;
-    background: #fff;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  justify-self: center; 
+  display: flex;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
+
+.search-container input {
+  flex: 1;
+  min-width: 0; 
+}
+
   .header-right {
-  width: 150px;
+  min-width: max-content;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.envios-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: $font-main;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  white-space: nowrap;
+
+  .icon {
+    font-size: 18px;
+  }
+}
 }
 
   input {
@@ -82,7 +107,7 @@
       }
     }
   }
-}
+
 
   .menu {
   background-color: $color-principal;

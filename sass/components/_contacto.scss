@@ -1,3 +1,6 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
 .contacto-form {
   max-width: 1000px;
   margin: 50px auto;

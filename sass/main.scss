@@ -1,13 +1,12 @@
+/* Utilities */
 @use "utilities/variables" as *;
 @use "utilities/mixins" as *;
 
+
 /* Base */
 @use "base/reset";
-@use "base/base";
+@use "base/tipografia";
 
-/* Layout */
-@use "layout/header";
-@use "layout/footer";
 
 /* Components */
 @use "components/categorias";
@@ -15,6 +14,20 @@
 @use "components/productos";
 @use "components/servicios";
 @use "components/contacto";
-@use "components/responsive";
+@use "components/destacados_de_la_semana";
+
+
+/* Layout */
+@use "layout/animaciones";
+@use "layout/body";
+@use "layout/footer";
+@use "layout/header";
+@use "layout/main";
+@use "layout/responsive";
+
+
+
+
+
 
 

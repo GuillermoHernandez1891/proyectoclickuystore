@@ -1,33 +1,44 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
 /* ========================== RESPONSIVE ========================== */
 
 @media (max-width: 768px) {
 
- .productos_destacados_de_la_semana {
-  gap: 40px;
-}
-
-  .product-card {
-  width: 100%;
-  max-width: 320px;
-}
-
-  .footer-links {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .contacto-form .contacto-grid {
+  .top-header {
     grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px 20px;
   }
+
+  .header-right {
+    display: none;
+  }
+
 }
 
 @media (max-width: 500px) {
+
   .header {
-    .search-container {
-      flex-direction: column;
-      border-radius: 15px;
-      gap: 8px;
-      padding: 10px;
-    }
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .search-container input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .envios-inline {
+    display: none;
   }
 }
