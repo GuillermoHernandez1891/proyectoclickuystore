@@ -1,29 +1,33 @@
 /* Utilities */
 @use "utilities/variables" as *;
 @use "utilities/mixins" as *;
+@use "utilities/animaciones";
+@use "utilities/responsive";
 
 
 /* Base */
 @use "base/reset";
+@use "base/body";
 @use "base/tipografia";
 
 
 /* Components */
 @use "components/categorias";
 @use "components/banner";
+@use "components/carousel";
+@use "components/destacados_de_la_semana";
 @use "components/productos";
 @use "components/servicios";
 @use "components/contacto";
-@use "components/destacados_de_la_semana";
+@use "components/index-main-productos";
+@use "components/usuario";
 
 
 /* Layout */
-@use "layout/animaciones";
-@use "layout/body";
-@use "layout/footer";
 @use "layout/header";
-@use "layout/main";
-@use "layout/responsive";
+@use "layout/footer";
+
+
 
 
 

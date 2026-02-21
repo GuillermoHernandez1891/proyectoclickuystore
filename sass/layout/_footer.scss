@@ -2,12 +2,13 @@
 @use "../utilities/mixins" as *;
 
 .footer-links {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 40px;
   padding: 40px 20px;
-  background-color: $color-gris-body;
-  max-width: 1200px;
+  background-color: gray;
+  color: #fff;
   margin: auto;
   flex-wrap: wrap;
   

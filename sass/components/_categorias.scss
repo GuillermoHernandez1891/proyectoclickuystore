@@ -5,20 +5,22 @@
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 40px 20px;
+  padding: 15px 20px;
   background-color: #ebebeb;
   flex-wrap: wrap;
+  margin-top: 0;
+}
 
   .categoria {
-    width: 120px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
 
     img {
-      width: 90px;
-      height: 90px;
+      width: 70px;
+      height: 70px;
       object-fit: contain;
       background-color: $color-blanco;
       border-radius: 50%;
@@ -32,10 +34,9 @@
 
     p {
       margin-top: 12px;
-      font-size: 14px;
+      font-size: 10px;
       font-weight: bold;
       text-align: center;
       color: #000;
     }
   }
-}
